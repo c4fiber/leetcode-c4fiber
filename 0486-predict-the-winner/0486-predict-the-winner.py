@@ -4,6 +4,9 @@ class Solution:
         dp_table = {}
         
         def optimal_pick(left: int, right: int) -> int:
+            '''
+            주어진 nums의 subarray nums[left:right+1] 에서의 최적의 선택을 반환
+            '''
             nonlocal nums, dp_table
             
             if left == right:
