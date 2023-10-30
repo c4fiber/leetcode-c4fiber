@@ -1,5 +1,5 @@
 class Solution:
-    def lengthOfLIS(self, nums: List[int]) -> int:
+    def lengthOfLIS_2(self, nums: List[int]) -> int:
         '''
         DP 방식으로 풀이
         k를 0 ~ N-1 까지 증가시키면서 k길이의 리스트의 LIS를 구한다.
@@ -44,7 +44,7 @@ class Solution:
         # breaks the "no changing the order" rule. Cheating? Maybe... However len(arr) = 4 is the 
         # correct answer. Overwriting 4 with 3 did not alter the sequence's length.
 
-    def solve02(self, nums: list[int]) -> int:
+    def lengthOfLIS(self, nums: list[int]) -> int:
         '''
         이진탐색을 이용한 LIS 구하기
         배열은 항상 오름차순으로 정렬되어 있으며
